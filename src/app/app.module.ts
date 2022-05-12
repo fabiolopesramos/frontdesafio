@@ -30,6 +30,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
+import { CountryComponent } from './components/country/country.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     NavComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    CountryComponent
     //NavComponent
   ],
   imports: [
