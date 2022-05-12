@@ -28,12 +28,14 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 import { NavComponent } from './components/nav/nav.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent
     //NavComponent
   ],
   imports: [
