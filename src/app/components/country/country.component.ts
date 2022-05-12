@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { Country } from 'src/app/model/country';
 
 @Component({
   selector: 'app-country',
@@ -9,20 +8,13 @@ import { Country } from 'src/app/model/country';
   styleUrls: ['./country.component.scss']
 })
 export class CountryComponent implements OnInit {
-  ELEMENT_DATA: Country[] =[
-    {
-      id: 'ARG',
-      nome: 'Argentina'
-    }
-  ]
-  displayedColumns: string[] = ['position', 'name'];
-  dataSource = new MatTableDataSource<Country>(this.ELEMENT_DATA);
+  displayedColumns: string[] = ['id', 'nome'];
+  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
@@ -30,3 +22,14 @@ export class CountryComponent implements OnInit {
     this.dataSource.paginator = this.paginator;
   }
 }
+
+export interface PeriodicElement {
+  id: string;
+  nome: string;
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {id: 'HY', nome: 'Hydrogen'},
+  {id: 'HE', nome: 'Helium'},
+
+];

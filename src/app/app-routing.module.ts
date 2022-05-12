@@ -8,7 +8,7 @@ const routes: Routes = [
   {
     path:'', component: NavComponent, children:[
       {path: 'home', component: HomeComponent},
-      {path: 'pais', component: CountryComponent}
+      {path: 'country', component: CountryComponent}
     ]
   }
 ];
