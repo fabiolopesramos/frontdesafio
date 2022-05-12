@@ -31,6 +31,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CountryComponent } from './components/country/country.component';
+import { ServiceComponent } from './country/service/service.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { CountryComponent } from './components/country/country.component';
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    CountryComponent
+    CountryComponent,
+    ServiceComponent
     //NavComponent
   ],
   imports: [
